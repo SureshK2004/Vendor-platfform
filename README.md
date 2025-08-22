@@ -5,13 +5,14 @@ Role: Backend Developer
     I developed a comprehensive multi-vendor platform backend using Django REST Framework with MySQL. This system enables efficient vendor onboarding, service management, booking processing, and platform monetization with a focus on scalability, security, and performance.
 
 🛠 Technical Stack
-  * Backend Framework: Django 4.2.7 + Django REST Framework 3.14.0
-  * Database: MySQL with mysqlclient 2.2.0
-  * Authentication: JWT (JSON Web Tokens) with PyJWT 2.8.0
-  * Caching: Redis with django-redis 5.2.0
-  * File Storage: django-storages 1.14.2 + boto3 1.28.62 (S3 compatible)
-  * API Documentation: drf-yasg 1.21.5
-  * Task Queue: Celery 5.3.4 for asynchronous processing
+
+      * Backend Framework: Django 4.2.7 + Django REST Framework 3.14.0
+      * Database: MySQL with mysqlclient 2.2.0
+      * Authentication: JWT (JSON Web Tokens) with PyJWT 2.8.0
+      * Caching: Redis with django-redis 5.2.0
+      * File Storage: django-storages 1.14.2 + boto3 1.28.62 (S3 compatible)
+      * API Documentation: drf-yasg 1.21.5
+      * Task Queue: Celery 5.3.4 for asynchronous processing
     
 
 🏗 System Architecture
@@ -35,26 +36,30 @@ The application follows a modular architecture with these components:
         * Vendor status workflow (pending → approved → active)
 
 3. Service Management
-        * Service catalog with categories and pricing tiers
-        * Dynamic pricing algorithms with quantity-based discounts
-        * Availability calendar with conflict detection
-        * Service CRUD operations with admin moderation
+   
+            * Service catalog with categories and pricing tiers
+            * Dynamic pricing algorithms with quantity-based discounts
+            * Availability calendar with conflict detection
+            * Service CRUD operations with admin moderation
 
 3. Booking System
-        * Real-time availability checking
-        * Complex booking validation with conflict prevention
-        * Automated pricing calculation including taxe
-        * Platform commission (15%) integration     
-        * Booking status workflow with history tracking
-        * Mock email confirmation system
+   
+                * Real-time availability checking
+                * Complex booking validation with conflict prevention
+                * Automated pricing calculation including taxe
+                * Platform commission (15%) integration     
+                * Booking status workflow with history tracking
+                * Mock email confirmation system
 
 5. Search & Filtering
+   
         * Multi-criteria vendor search (location, service type, rating)
         * Advanced filtering by price range, availability, and rating
         * Distance-based sorting (with geolocation support)
         * Performance analytics for vendors
 
 5. Security & Performance
+   
         * JWT authentication with secure token management
         * Rate limiting to prevent API abuse
         * Redis caching for frequently accessed data

@@ -250,4 +250,4 @@ Clone the repository
 
 This vendor management system provides a robust foundation for a multi-vendor platform with comprehensive features, security measures, and scalability options for future growth.
 
-New chat
+
